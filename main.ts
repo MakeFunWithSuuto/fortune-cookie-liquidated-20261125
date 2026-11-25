@@ -1,7 +1,7 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 
 const FORTUNE =
-  "Your lucky numbers tonight are 0, 0, and the liquidation price you swore was safe.";
+  "Do not weep for your liquidated long—this free cookie still leaves you with a fortune.";
 
 mkdirSync("/output", { recursive: true });
 writeFileSync("/output/entry.txt", `${FORTUNE}\n`, "utf8");
